@@ -1,11 +1,9 @@
 import React from 'react';
-import GeolocationExample from './GeoLocation'
+import LottieView from 'lottie-react-native';
 
 const App = () => {
-
-  return (
-    <GeolocationExample/>
-  )
+ 
+  return <LottieView source={require('./assets/loader.json')} autoPlay loop />;
 };
 
 
