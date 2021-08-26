@@ -5,7 +5,6 @@ import Geolocation from 'react-native-geolocation-service';
 class GeolocationExample extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       latitude: null,
       longitude: null,
@@ -39,6 +38,7 @@ class GeolocationExample extends Component {
         <Text>Longitude: {this.state.longitude}</Text>
         {this.state.error ? <Text>Error: {this.state.error}</Text> : null}
       </View>
+    
     );
   }
 }
